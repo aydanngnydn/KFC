@@ -49,69 +49,195 @@ MonoBehaviour:
   b: {fileID: 0}
   thingy:
   - eggChances:
-      chickenTypes: []
-    chick1: 0
-    chick2: 0
-  - eggChances:
       chickenTypes:
       - value: 2
         weight: 10
+    chick1: 1
+    chick2: 1
+  - eggChances:
+      chickenTypes:
+      - value: 6
+        weight: 3
+      - value: 3
+        weight: 7
+    chick1: 1
+    chick2: 2
+  - eggChances:
+      chickenTypes:
       - value: 4
-        weight: 12
+        weight: 7
+      - value: 6
+        weight: 3
+    chick1: 1
+    chick2: 3
+  - eggChances:
+      chickenTypes:
+      - value: 5
+        weight: 7
+      - value: 6
+        weight: 3
+    chick1: 3
+    chick2: 2
+  - eggChances:
+      chickenTypes:
+      - value: 7
+        weight: 7
+      - value: 6
+        weight: 3
+    chick1: 4
+    chick2: 4
+  - eggChances:
+      chickenTypes:
+      - value: 2
+        weight: 7
+      - value: 6
+        weight: 3
+    chick1: 2
+    chick2: 2
+  - eggChances:
+      chickenTypes:
+      - value: 3
+        weight: 7
+      - value: 6
+        weight: 3
+    chick1: 3
+    chick2: 3
+  - eggChances:
+      chickenTypes:
+      - value: 5
+        weight: 7
+      - value: 6
+        weight: 3
+    chick1: 5
+    chick2: 5
+  - eggChances:
+      chickenTypes:
+      - value: 7
+        weight: 7
+      - value: 6
+        weight: 3
+    chick1: 7
+    chick2: 7
+  - eggChances:
+      chickenTypes:
       - value: 4
-        weight: 12
+        weight: 4
+      - value: 1
+        weight: 4
+      - value: 6
+        weight: 2
+    chick1: 1
+    chick2: 4
+  - eggChances:
+      chickenTypes:
+      - value: 5
+        weight: 4
+      - value: 1
+        weight: 4
+      - value: 6
+        weight: 2
+    chick1: 1
+    chick2: 5
+  - eggChances:
+      chickenTypes:
+      - value: 7
+        weight: 4
+      - value: 1
+        weight: 4
+      - value: 6
+        weight: 2
+    chick1: 1
+    chick2: 7
+  - eggChances:
+      chickenTypes:
+      - value: 2
+        weight: 4
+      - value: 4
+        weight: 4
+      - value: 6
+        weight: 2
+    chick1: 2
+    chick2: 4
+  - eggChances:
+      chickenTypes:
+      - value: 2
+        weight: 4
+      - value: 5
+        weight: 4
+      - value: 6
+        weight: 2
     chick1: 2
     chick2: 5
   - eggChances:
       chickenTypes:
       - value: 2
-        weight: 10
-      - value: 4
-        weight: 12
-      - value: 4
-        weight: 12
+        weight: 4
+      - value: 7
+        weight: 4
+      - value: 6
+        weight: 2
     chick1: 2
+    chick2: 7
+  - eggChances:
+      chickenTypes:
+      - value: 3
+        weight: 4
+      - value: 4
+        weight: 4
+      - value: 6
+        weight: 2
+    chick1: 3
+    chick2: 4
+  - eggChances:
+      chickenTypes:
+      - value: 3
+        weight: 4
+      - value: 5
+        weight: 4
+      - value: 6
+        weight: 2
+    chick1: 3
     chick2: 5
   - eggChances:
       chickenTypes:
-      - value: 2
-        weight: 10
+      - value: 3
+        weight: 4
+      - value: 7
+        weight: 4
+      - value: 6
+        weight: 2
+    chick1: 3
+    chick2: 7
+  - eggChances:
+      chickenTypes:
       - value: 4
-        weight: 12
-      - value: 4
-        weight: 12
-    chick1: 2
+        weight: 4
+      - value: 5
+        weight: 4
+      - value: 6
+        weight: 2
+    chick1: 4
     chick2: 5
   - eggChances:
       chickenTypes:
-      - value: 2
-        weight: 10
       - value: 4
-        weight: 12
-      - value: 4
-        weight: 12
-    chick1: 2
-    chick2: 5
+        weight: 4
+      - value: 7
+        weight: 4
+      - value: 6
+        weight: 2
+    chick1: 4
+    chick2: 7
   - eggChances:
       chickenTypes:
-      - value: 2
-        weight: 10
-      - value: 4
-        weight: 12
-      - value: 4
-        weight: 12
-    chick1: 2
-    chick2: 5
-  - eggChances:
-      chickenTypes:
-      - value: 2
-        weight: 10
-      - value: 4
-        weight: 12
-      - value: 4
-        weight: 12
-    chick1: 2
-    chick2: 5
+      - value: 5
+        weight: 4
+      - value: 7
+        weight: 4
+      - value: 6
+        weight: 2
+    chick1: 5
+    chick2: 7
 --- !u!1 &7771916169303679793
 GameObject:
   m_ObjectHideFlags: 0

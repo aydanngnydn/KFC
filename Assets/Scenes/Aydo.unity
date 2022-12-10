@@ -244,9 +244,11 @@ MonoBehaviour:
   agingRate: 0
   hunger: 0
   hungerRate: 0
+  eggPrefab: {fileID: 0}
   id: 1
   foodEff: 0
   agingSpeed: 0
+  pen: {fileID: 0}
 --- !u!114 &1010167523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -470,9 +472,11 @@ MonoBehaviour:
   agingRate: 0
   hunger: 0
   hungerRate: 0
+  eggPrefab: {fileID: 0}
   id: 1
   foodEff: 0
   agingSpeed: 0
+  pen: {fileID: 0}
 --- !u!1001 &7771916168941891132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -480,42 +484,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6544084278544765123, guid: e3f179f9803d9084b9d46295817616c4, type: 3}
-      propertyPath: thingy.Array.data[0].chick1
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6544084278544765123, guid: e3f179f9803d9084b9d46295817616c4, type: 3}
-      propertyPath: thingy.Array.data[0].chick2
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6544084278544765123, guid: e3f179f9803d9084b9d46295817616c4, type: 3}
-      propertyPath: thingy.Array.data[1].chick2
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6544084278544765123, guid: e3f179f9803d9084b9d46295817616c4, type: 3}
-      propertyPath: thingy.Array.data[2].chick1
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6544084278544765123, guid: e3f179f9803d9084b9d46295817616c4, type: 3}
-      propertyPath: thingy.Array.data[2].chick2
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6544084278544765123, guid: e3f179f9803d9084b9d46295817616c4, type: 3}
-      propertyPath: thingy.Array.data[0].eggChances.chickenTypes.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6544084278544765123, guid: e3f179f9803d9084b9d46295817616c4, type: 3}
-      propertyPath: thingy.Array.data[1].eggChances.chickenTypes.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6544084278544765123, guid: e3f179f9803d9084b9d46295817616c4, type: 3}
-      propertyPath: thingy.Array.data[0].eggChances.chickenTypes.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6544084278544765123, guid: e3f179f9803d9084b9d46295817616c4, type: 3}
-      propertyPath: thingy.Array.data[0].eggChances.chickenTypes.Array.data[0].weight
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 7771916168977677745, guid: e3f179f9803d9084b9d46295817616c4, type: 3}
       propertyPath: m_Name
       value: Pen
