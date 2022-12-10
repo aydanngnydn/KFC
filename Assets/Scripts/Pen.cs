@@ -9,10 +9,10 @@ public class Pen:Holdable
 	public List<Egg> eggs = new List<Egg>();
 	private void Start()
 	{
-		StartCoroutine(ILayEgg());
+		StartCoroutine(LayEgg());
 	}
 
-	private IEnumerator ILayEgg()
+	private IEnumerator LayEgg()
 	{
 		while (true)
 		{
