@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Holdable : MonoBehaviour
+public abstract class Mousable : MonoBehaviour
 {
 	private bool mouseOver = false;
 	
@@ -19,7 +19,6 @@ public abstract class Holdable : MonoBehaviour
 
 	private void OnMouseExit()
 	{
-
 		mouseOver = false;
 	}
 
@@ -41,7 +40,6 @@ public abstract class Holdable : MonoBehaviour
 	private void OnMouseUp()
 	{
 		if (!mouseOver) return;
-
 		
 		if (Input.GetMouseButtonUp(0))
 		{

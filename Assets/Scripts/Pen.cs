@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pen:Holdable
+public class Pen:Holder
 {
 	public List<Chicken> chickens = new List<Chicken>();
 	public List<Egg> eggs = new List<Egg>();
@@ -18,41 +18,33 @@ public class Pen:Holdable
 		{
 			foreach (Chicken chick in chickens)
 			{
-				chick.timer += 1;
+				chick.LayEggTimer += 1;
 				
-				if (chick.layTime == chick.timer) break;
+				if (chick.layTime >= chick.LayEggTimer) break;
 			}
 			yield return new WaitForSeconds(1f);
 		}
 	}
 
-	protected override void OnMouseHover()
-	{
-		throw new NotImplementedException();
-	}
-
-	protected override void OnLeftMouseDown()
-	{
-		throw new NotImplementedException();
-	}
-
-	protected override void OnRightMouseDown()
-	{
-		throw new NotImplementedException();
-	}
-
 	protected override void OnLeftMouseUp()
 	{
-		throw new NotImplementedException();
+		base.OnLeftMouseUp();
+		var item = CursorInventoryManager.I.GetInventoryItem() as Chicken;
+		if (!item) return;
+
+		AddChicken(item);
+		item.pen.RemoveChicken(item);
+		item.pen = this;
 	}
 
-	protected override void OnRightMouseUp()
+	public void RemoveChicken(Chicken chicken)
 	{
-		throw new NotImplementedException();
+		chickens.Remove(chicken);
 	}
-
-	protected override void OnMouseDragging()
+	
+	public void AddChicken(Chicken chicken)
 	{
-		throw new NotImplementedException();
+		chickens.Add(chicken);
+
 	}
 }

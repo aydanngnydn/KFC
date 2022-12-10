@@ -3,19 +3,23 @@ using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public abstract class Chicken : Moveable
+public class Chicken : Moveable
 {
     [SerializeField] protected float age = 0;
     [SerializeField] protected float agingRate;
     [SerializeField] protected float hunger;
     [SerializeField] protected float hungerRate;
     [SerializeField] protected GameObject eggPrefab;
+    [SerializeField] private int id;
+
     
     [Header("Genes")]
-    [SerializeField] public float layTime, timer = 0;
     [SerializeField] protected float foodEff;
     [SerializeField] protected float agingSpeed;
-    
+
+    public Pen pen;
+    public float layTime { get; set; } = 0;
+    public float LayEggTimer { get; set; } = 0;
 
     private void Start()
     {

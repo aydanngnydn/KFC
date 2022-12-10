@@ -2,9 +2,9 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class Moveable: Holdable
+public class Moveable: Mousable
 {
-	protected bool OnHand;
+	public bool OnInventory { get; private set; }
 	private Vector3 _mousePositionFrameBefore;
 	protected override void OnMouseHover()
 	{
@@ -12,6 +12,7 @@ public class Moveable: Holdable
 
 	protected override void OnLeftMouseDown()
 	{
+		OnInventory = CursorInventoryManager.I.AddToInventory(this);
 		_mousePositionFrameBefore = Input.mousePosition;
 	}
 
@@ -21,7 +22,9 @@ public class Moveable: Holdable
 
 	protected override void OnLeftMouseUp()
 	{
-		OnHand = false;
+		if (!OnInventory) return;
+		CursorInventoryManager.I.RemoveSelfFromInventory();
+		OnInventory = false;
 	}
 
 	protected override void OnRightMouseUp()
@@ -30,7 +33,7 @@ public class Moveable: Holdable
 
 	protected override void OnMouseDragging()
 	{
-		OnHand = true;
+		if (!OnInventory) return;
 		var mouseDelta = Input.mousePosition - _mousePositionFrameBefore;
 		_mousePositionFrameBefore = Input.mousePosition;
 		var objectDisplacement = new Vector3(mouseDelta.x * 2 * Camera.main.orthographicSize / Camera.main.pixelHeight,mouseDelta.y * 2 * Camera.main.orthographicSize / Camera.main.pixelHeight,0);
