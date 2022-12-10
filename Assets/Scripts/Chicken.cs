@@ -18,6 +18,7 @@ public class Chicken : Moveable
     [SerializeField] protected float agingSpeed;
 
     public Pen pen;
+    
     public float layTime { get; set; } = 0;
     public float LayEggTimer { get; set; } = 0;
 

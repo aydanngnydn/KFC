@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Pen:Holder
 {
+	[SerializeField] private int capacity;
 	public List<Chicken> chickens = new List<Chicken>();
 	public List<Egg> eggs = new List<Egg>();
 	private void Start()
@@ -29,11 +30,19 @@ public class Pen:Holder
 	protected override void OnLeftMouseUp()
 	{
 		base.OnLeftMouseUp();
-		var item = CursorInventoryManager.I.GetInventoryItem() as Chicken;
-		if (!item) return;
+		var inventoryItem = CursorInventoryManager.I.GetInventoryItem();
+		var item = inventoryItem as Chicken;
+		if (!item || (chickens.Count >= capacity))
+		{
+			inventoryItem.ResetPos();
+			return;
+		}
 
+		if (item.pen)
+		{
+			item.pen.RemoveChicken(item);
+		}
 		AddChicken(item);
-		item.pen.RemoveChicken(item);
 		item.pen = this;
 	}
 
@@ -45,6 +54,17 @@ public class Pen:Holder
 	public void AddChicken(Chicken chicken)
 	{
 		chickens.Add(chicken);
+
+	}
+
+	public override bool OnMoveableDropped(Moveable selected)
+	{
+		var chicken = selected as Chicken;
+		
+		if (!chicken) return false;
+		
+		AddChicken(chicken);
+		return true;
 
 	}
 }

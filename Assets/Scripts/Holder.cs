@@ -1,4 +1,6 @@
-﻿public class Holder : Mousable
+﻿using UnityEngine.UI;
+
+public class Holder : Mousable
 {
 	protected override void OnMouseHover()
 	{
@@ -28,5 +30,10 @@
 	protected override void OnMouseDragging()
 	{
 		
+	}
+
+	public virtual bool OnMoveableDropped(Moveable selected)
+	{
+		return true;
 	}
 }

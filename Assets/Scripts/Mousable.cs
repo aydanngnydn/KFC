@@ -5,47 +5,24 @@ using UnityEngine;
 
 public abstract class Mousable : MonoBehaviour
 {
-	private bool mouseOver = false;
-	
 	private void OnMouseOver()
 	{
 		OnMouseHover();
-	}
-
-	private void OnMouseEnter()
-	{
-		mouseOver = true;
-	}
-
-	private void OnMouseExit()
-	{
-		mouseOver = false;
-	}
-
-	protected void OnMouseDown()
-	{
-		if (!mouseOver) return;
-
 		
 		if (Input.GetMouseButtonDown(0))
 		{
 			OnLeftMouseDown();
 		}
-		else if(Input.GetMouseButtonDown(1))
+		if(Input.GetMouseButtonDown(1))
 		{
 			OnRightMouseDown();
 		}
-	}
-
-	private void OnMouseUp()
-	{
-		if (!mouseOver) return;
 		
 		if (Input.GetMouseButtonUp(0))
 		{
 			OnLeftMouseUp();
 		}
-		else if(Input.GetMouseButtonUp(1))
+		if(Input.GetMouseButtonUp(1))
 		{
 			OnRightMouseUp();
 		}
