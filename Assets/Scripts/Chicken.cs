@@ -11,7 +11,7 @@ public abstract class Chicken : Moveable
     [SerializeField] protected GameObject eggPrefab;
     
     [Header("Genes")]
-    [SerializeField] protected float laySpeed;
+    [SerializeField] public float layTime, timer = 0;
     [SerializeField] protected float foodEff;
     [SerializeField] protected float agingSpeed;
     

@@ -1,10 +1,31 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class Pen:Holdable
 {
 	public List<Chicken> chickens = new List<Chicken>();
 	public List<Egg> eggs = new List<Egg>();
+	private void Start()
+	{
+		StartCoroutine(ILayEgg());
+	}
+
+	private IEnumerator ILayEgg()
+	{
+		while (true)
+		{
+			foreach (Chicken chick in chickens)
+			{
+				chick.timer += 1;
+				
+				if (chick.layTime == chick.timer) break;
+			}
+			yield return new WaitForSeconds(1f);
+		}
+	}
+
 	protected override void OnMouseHover()
 	{
 		throw new NotImplementedException();

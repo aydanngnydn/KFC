@@ -6,7 +6,7 @@ public abstract class Egg : Moveable
 {
     private Chicken chicken;
     private int id;
-    [SerializeField] protected float hatchTime;
-    [SerializeField] protected float value;
-    
+    [SerializeField] public float timer = 0, hatchTime;
+    [SerializeField] float value;
+
 }
