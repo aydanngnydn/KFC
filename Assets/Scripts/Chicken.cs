@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Chicken : MonoBehaviour
+public abstract class Chicken : Moveable
 {
     [SerializeField] protected float age = 0;
     [SerializeField] protected float hunger;

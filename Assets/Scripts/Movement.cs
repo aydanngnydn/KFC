@@ -32,10 +32,22 @@ public class Movement : MonoBehaviour
 
     private IEnumerator MovementType()
     {
-        xDir = Random.Range(-1f, 1f); yDir = 1 - Mathf.Abs(xDir);
-        move = true; layDown = false;
-        yield return new WaitForSeconds(typeChangeTime);
-        layDown = true; move = false;
-        yield return new WaitForSeconds(typeChangeTime);
+        while (true)
+        {
+            int type = Random.Range(1, 2);
+            switch (type)
+            {
+                case 1:
+                    xDir = Random.Range(-1f, 1f); yDir = 1 - Mathf.Abs(xDir);
+                    move = true; layDown = false;
+                    yield return new WaitForSeconds(typeChangeTime);
+                    break;
+                case 2:
+                    layDown = true; move = false;
+                    yield return new WaitForSeconds(typeChangeTime);
+                    break;
+            }
+            break;
+        }
     }
 }
