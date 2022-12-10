@@ -2,40 +2,53 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-
 public class PentHouse : MonoBehaviour
 {
-    [SerializeField] private WeightedList<int> a ;
-    
-}
+    public Chicken a;
+    public Chicken b;
+    [SerializeField] private List<HachingChanceThing> thingy;
+    Egg newEgg;
 
-public class ChickComb : MonoBehaviour
-{
-    private Chicken chick1;
-    private Chicken chick2;
-    private WeightedList<Chicken> typeList;
 
-    void ChickenCombination(Chicken chick1, Chicken chick2)
+    public Egg ChickenCombination(Chicken chick1, Chicken chick2)
     {
         if (chick1.id == chick2.id)
         {
-            
+            newEgg.id = chick1.id;
         }
+        else
+        {
+            //newEgg.id = typeList.GetRandomElement();
+        }
+        return newEgg;
     }
+}
+
+[Serializable]
+public class HachingChanceThing
+{
+    public WeightedList<Egg>  eggChances;
+    [SerializeField] private int chick1;
+    [SerializeField] private int chick2;
+
+    public int sum => chick1 + chick2;
+    public int multiplication => chick1 * chick2;
+
 }
 
 [Serializable]
 public class WeightedList<T>
 {
-    public List<WeightedElement<T>> a;
+    public List<WeightedElement<T>> chickenTypes;
     private int totalWeight = 0;
     
-    public T GetRandomElement() 
+    public int GetRandomElement() 
     {
-        foreach (WeightedElement<T> el in a)
+        foreach (WeightedElement<T> el in chickenTypes)
         {
             totalWeight += el.weight;
         }
@@ -47,13 +60,13 @@ public class WeightedList<T>
     {
         int rand = Random.Range(0, totalWeight + 1);
         int pos = 0;
-        for (int i=0; i < a.Count; i++)
+        for (int i=0; i < chickenTypes.Count; i++)
         {
-            if(rand <= a[i].weight + pos)
+            if(rand <= chickenTypes[i].weight + pos)
             {
-                return a[i];
+                return chickenTypes[i];
             }
-            pos += a[i].weight;
+            pos += chickenTypes[i].weight;
         }
 
         return null;
@@ -62,6 +75,6 @@ public class WeightedList<T>
 [Serializable]
 public class WeightedElement<T>
 {
-    public T value;
+    public int value;
     public int weight;
 }
