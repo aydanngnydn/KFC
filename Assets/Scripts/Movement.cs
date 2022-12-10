@@ -9,7 +9,7 @@ using Random = UnityEngine.Random;
 public class Movement : MonoBehaviour
 {
     [SerializeField] private float speed;
-    [SerializeField] private float typeChangeTime;
+    [SerializeField] private float typeChangeTime, maxTime, minTime;
     private bool move = true, layDown = false, aydo = false, hovered = false;
     private float xDir, yDir;
     private Vector3 dirVector;
@@ -36,6 +36,7 @@ public class Movement : MonoBehaviour
         int type = Random.Range(1, 3);
         while (true)
         {
+            typeChangeTime = Random.Range(minTime, maxTime);
             while (type == 1 && !hovered)
             {
                 xDir = Random.Range(-1f, 1f);
