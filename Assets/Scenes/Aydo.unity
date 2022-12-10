@@ -319,5 +319,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   typeChangeTime: 1
-  maxTime: 0
-  minTime: 0
+  maxTime: 5
+  minTime: 1
