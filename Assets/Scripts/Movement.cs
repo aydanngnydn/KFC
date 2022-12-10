@@ -41,16 +41,14 @@ public class Movement : MonoBehaviour
                 xDir = Random.Range(-1f, 1f);
                 yDir = Random.Range(-1f, 1f);
                 dirVector = Vector3.Normalize(new Vector3(xDir, yDir, 0));
-                move = true;
-                layDown = false;
+                move = true; layDown = false;
                 yield return new WaitForSeconds(typeChangeTime);
                 type = Random.Range(1, 3);
             }
 
             while (type == 2)
             {
-                layDown = true;
-                move = false;
+                layDown = true; move = false;
                 yield return new WaitForSeconds(typeChangeTime);
                 type = Random.Range(1, 3);
             }
