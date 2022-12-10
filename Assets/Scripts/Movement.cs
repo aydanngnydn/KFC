@@ -10,8 +10,9 @@ public class Movement : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float typeChangeTime;
-    private bool move = true, layDown = false;
+    private bool move = true, layDown = false, aydo = false;
     private float xDir, yDir;
+    private Vector3 dirVector;
 
     private void Start()
     {
@@ -22,7 +23,7 @@ public class Movement : MonoBehaviour
     {
         if (move && !layDown)
         {
-            transform.Translate(new Vector3(xDir, yDir, 0) * (speed * Time.deltaTime));
+            transform.Translate(dirVector * (speed * Time.deltaTime));
         }
         else if (!move && layDown)
         {
@@ -34,11 +35,12 @@ public class Movement : MonoBehaviour
     {
         while (true)
         {
-            int type = Random.Range(1, 2);
+            int type = Random.Range(1, 3);
             switch (type)
             {
                 case 1:
-                    xDir = Random.Range(-1f, 1f); yDir = 1 - Mathf.Abs(xDir);
+                    xDir = Random.Range(-1f, 1f); yDir = Random.Range(-1f, 1f);
+                    dirVector = Vector3.Normalize(new Vector3(xDir, yDir, 0));
                     move = true; layDown = false;
                     yield return new WaitForSeconds(typeChangeTime);
                     break;
@@ -47,7 +49,10 @@ public class Movement : MonoBehaviour
                     yield return new WaitForSeconds(typeChangeTime);
                     break;
             }
-            break;
+            if (aydo)
+            {
+                break;
+            }
         }
     }
 }
