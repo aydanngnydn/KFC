@@ -40,5 +40,7 @@ public class Moveable: Mousable
 
 	public void ResetPos()
 	{
+		transform.position = _startPos;
 	}
+	
 }

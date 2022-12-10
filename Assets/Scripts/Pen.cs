@@ -27,25 +27,6 @@ public class Pen:Holder
 		}
 	}
 
-	protected override void OnLeftMouseUp()
-	{
-		base.OnLeftMouseUp();
-		var inventoryItem = CursorInventoryManager.I.GetInventoryItem();
-		var item = inventoryItem as Chicken;
-		if (!item || (chickens.Count >= capacity))
-		{
-			inventoryItem.ResetPos();
-			return;
-		}
-
-		if (item.pen)
-		{
-			item.pen.RemoveChicken(item);
-		}
-		AddChicken(item);
-		item.pen = this;
-	}
-
 	public void RemoveChicken(Chicken chicken)
 	{
 		chickens.Remove(chicken);
@@ -54,6 +35,12 @@ public class Pen:Holder
 	public void AddChicken(Chicken chicken)
 	{
 		chickens.Add(chicken);
+		if (chicken.pen)
+		{
+			chicken.pen.RemoveChicken(chicken);
+		}
+
+		chicken.pen = this;
 
 	}
 
@@ -61,7 +48,7 @@ public class Pen:Holder
 	{
 		var chicken = selected as Chicken;
 		
-		if (!chicken) return false;
+		if (!chicken || chickens.Count >= capacity) return false;
 		
 		AddChicken(chicken);
 		return true;

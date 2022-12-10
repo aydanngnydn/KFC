@@ -21,6 +21,8 @@ public class CursorInventoryManager: Singleton<CursorInventoryManager>
 
 	private void Update()
 	{
+		if(!Inventory) return;
+		
 		if (Input.GetMouseButtonUp(0))
 		{
 			var holder = GetHolderObject();

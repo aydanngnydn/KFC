@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7771916168977677747}
   - component: {fileID: 6544084278544765123}
   m_Layer: 0
-  m_Name: Pen
+  m_Name: penthouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
