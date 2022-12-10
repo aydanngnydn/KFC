@@ -10,7 +10,7 @@ public class Movement : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float typeChangeTime;
-    private bool move = true, layDown = false, aydo = false;
+    private bool move = true, layDown = false, aydo = false, hovered = false;
     private float xDir, yDir;
     private Vector3 dirVector;
 
@@ -33,22 +33,28 @@ public class Movement : MonoBehaviour
 
     private IEnumerator MovementType()
     {
+        int type = Random.Range(1, 3);
         while (true)
         {
-            int type = Random.Range(1, 3);
-            switch (type)
+            while (type == 1 && !hovered)
             {
-                case 1:
-                    xDir = Random.Range(-1f, 1f); yDir = Random.Range(-1f, 1f);
-                    dirVector = Vector3.Normalize(new Vector3(xDir, yDir, 0));
-                    move = true; layDown = false;
-                    yield return new WaitForSeconds(typeChangeTime);
-                    break;
-                case 2:
-                    layDown = true; move = false;
-                    yield return new WaitForSeconds(typeChangeTime);
-                    break;
+                xDir = Random.Range(-1f, 1f);
+                yDir = Random.Range(-1f, 1f);
+                dirVector = Vector3.Normalize(new Vector3(xDir, yDir, 0));
+                move = true;
+                layDown = false;
+                yield return new WaitForSeconds(typeChangeTime);
+                type = Random.Range(1, 3);
             }
+
+            while (type == 2)
+            {
+                layDown = true;
+                move = false;
+                yield return new WaitForSeconds(typeChangeTime);
+                type = Random.Range(1, 3);
+            }
+
             if (aydo)
             {
                 break;
