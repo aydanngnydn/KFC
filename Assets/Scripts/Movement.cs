@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float direction;
     [SerializeField] private float typeChangeTime;
-    private bool move, layDown;
+    private bool move = true, layDown = false;
 
     private void Start()
     {
@@ -29,11 +29,9 @@ public class Movement : MonoBehaviour
 
     private IEnumerator MovementType()
     {
-        move = true;
-        layDown = false;
+        move = true; layDown = false;
         yield return new WaitForSeconds(typeChangeTime);
-        layDown = true;
-        move = false;
+        layDown = true; move = false;
 
     }
 }

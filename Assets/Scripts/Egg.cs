@@ -7,4 +7,5 @@ public abstract class Egg : MonoBehaviour
     private Chicken chicken;
     [SerializeField] protected float hatchTime;
     [SerializeField] protected float value;
+    
 }
