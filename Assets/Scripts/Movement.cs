@@ -23,7 +23,8 @@ public class Movement : MonoBehaviour
     {
         if (move && !layDown)
         {
-            RaycastHit2D wallInfo = Physics2D.Raycast(transform.position, Vector2.down, 1f);
+            RaycastHit2D wallInfo = Physics2D.Raycast(transform.position, Vector2.up, 1f);
+            Debug.DrawLine (transform.position, wallInfo.point, Color.cyan);
             if (wallInfo.collider &&  wallInfo.collider.tag == "Wall")
             {
                 dirVector *= -1;

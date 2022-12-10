@@ -10,7 +10,7 @@ public class Chicken : Moveable
     [SerializeField] protected float hunger;
     [SerializeField] protected float hungerRate;
     [SerializeField] protected GameObject eggPrefab;
-    [SerializeField] private int id;
+    [SerializeField] public int id;
 
     
     [Header("Genes")]
