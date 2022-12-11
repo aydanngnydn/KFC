@@ -56,6 +56,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3559847166897267948, guid: 6626b98415b80fb4087da236738b8ccd, type: 3}
+      propertyPath: chick
+      value: 
+      objectReference: {fileID: 8681498978208134852, guid: befa2474c0af97345b1357dfa1b7f49c, type: 3}
+    - target: {fileID: 3559847166897267948, guid: 6626b98415b80fb4087da236738b8ccd, type: 3}
       propertyPath: value
       value: 20
       objectReference: {fileID: 0}
@@ -77,7 +81,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8929904109290735498, guid: 6626b98415b80fb4087da236738b8ccd, type: 3}
       propertyPath: m_Name
-      value: AngelEgg4
+      value: AngelEgg4 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6626b98415b80fb4087da236738b8ccd, type: 3}

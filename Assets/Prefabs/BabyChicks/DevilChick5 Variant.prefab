@@ -12,6 +12,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5577850756752360121, guid: 5845b886767966e45be5d49e9a561453, type: 3}
+      propertyPath: chicken
+      value: 
+      objectReference: {fileID: 7402999782400196612, guid: 6e362c7f0403452408a8701a7f05c673, type: 3}
+    - target: {fileID: 5577850756752360121, guid: 5845b886767966e45be5d49e9a561453, type: 3}
       propertyPath: eggPrefab
       value: 
       objectReference: {fileID: 5931321653463026387, guid: 15ce94bedef00fd40b56f0a3796fc9e0, type: 3}
@@ -61,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9047206594257556861, guid: 5845b886767966e45be5d49e9a561453, type: 3}
       propertyPath: m_Name
-      value: DevilChick5
+      value: DevilChick5 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5845b886767966e45be5d49e9a561453, type: 3}

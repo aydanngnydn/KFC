@@ -12,6 +12,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5577850756752360121, guid: 5845b886767966e45be5d49e9a561453, type: 3}
+      propertyPath: chicken
+      value: 
+      objectReference: {fileID: 6716903622449132310, guid: a3ae9e5b253e12143b70c394558457df, type: 3}
+    - target: {fileID: 5577850756752360121, guid: 5845b886767966e45be5d49e9a561453, type: 3}
       propertyPath: eggPrefab
       value: 
       objectReference: {fileID: 3720845661099327633, guid: 595f75b2cc770b24db5387d9a491a7f1, type: 3}
@@ -61,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9047206594257556861, guid: 5845b886767966e45be5d49e9a561453, type: 3}
       propertyPath: m_Name
-      value: WaterChick3
+      value: WaterChick3 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5845b886767966e45be5d49e9a561453, type: 3}

@@ -121,7 +121,7 @@ MonoBehaviour:
   defaultEggLayingSecond: 30
   defaultOldAgeSecond: 300
   id: 0
-  OldChickenPrefab: {fileID: 0}
+  OldChickenPrefab: {fileID: 1522802384616118522, guid: 7a287217fa8435e4bb74998d44b6fe85, type: 3}
   OnDie:
     m_PersistentCalls:
       m_Calls: []

@@ -7,7 +7,7 @@ using UnityEngine;
 public class BabyChick : Chicken
 {
     [SerializeField] int chickenTime = 15;
-    private GameObject chicken;
+    [SerializeField] GameObject chicken;
     private int timer = 0;
     
 

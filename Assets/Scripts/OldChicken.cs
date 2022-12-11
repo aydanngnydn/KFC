@@ -5,7 +5,7 @@ public class OldChicken : Chicken
 {
 	[SerializeField] private float defaultDeathSecond = 60;
 	private float deathAge;
-	private float oldAge = 0;
+	private float ageNOW = 0;
 
 
 	protected override void Start()
@@ -19,8 +19,8 @@ public class OldChicken : Chicken
 	{
 		while (true)
 		{
-			oldAge += Time.deltaTime;
-			if (deathAge <= oldAge)
+			ageNOW += Time.deltaTime;
+			if (deathAge <= ageNOW)
 			{
 				Die();
 			}
