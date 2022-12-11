@@ -1,0 +1,672 @@
+fileFormatVersion: 2
+guid: 8d8cae651f0a848428212a2ef61cdbde
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hersey_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 284
+        width: 31
+        height: 36
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b0ac4f7bce2b246973e8e2e564d8ac
+      internalID: -298512542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 283
+        width: 31
+        height: 37
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec2e55290030f943ba400d17338af77
+      internalID: -57966516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 282
+        width: 40
+        height: 39
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05f2ed3f5ec0ba41a1a8f394c8d3bbc
+      internalID: 601159420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 283
+        width: 31
+        height: 38
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d4eff5474fa3f4da982c641b0e41eb
+      internalID: -1688163742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 283
+        width: 37
+        height: 36
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3cd4a0c4e810d044938870bef776e89
+      internalID: 1819495729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 283
+        width: 31
+        height: 36
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c412be9ccef1ee47b02705971b9ee72
+      internalID: -2053867601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_6
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 311
+        width: 24
+        height: 9
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b098bba779a5a54fae990c204fba28a
+      internalID: 19992732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_7
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 274
+        width: 31
+        height: 36
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636aa32b1ebfb2841924f975f8f3651f
+      internalID: -1706493867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 253
+        width: 35
+        height: 21
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1813b6f553f7781408f34e7eced2543d
+      internalID: 56802964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_9
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 246
+        width: 49
+        height: 28
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a80494ceb82de1449a94cc9fcb6b358
+      internalID: -827764258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_10
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 253
+        width: 56
+        height: 21
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c00737804ee7e4089a24c0af51ff97
+      internalID: -42292582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_11
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 245
+        width: 69
+        height: 29
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9e6352af795654caa48da47516b653
+      internalID: -2074279418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_12
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 254
+        width: 7
+        height: 16
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416a55ab6f497234e976666f4694e649
+      internalID: -252760416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_13
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 254
+        width: 7
+        height: 16
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c28163ba6ebf7143a749f1b8c1626d4
+      internalID: -259428460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_14
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 254
+        width: 7
+        height: 17
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86281d23e433d842ab17ab0c518adc9
+      internalID: 1410976282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_15
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 254
+        width: 7
+        height: 17
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daeaab3c84a9bb54d8d859c4f9b19ec8
+      internalID: -1941397601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 226
+        width: 10
+        height: 13
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf39cf06fd73d44bad2780768338029
+      internalID: -478312877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 226
+        width: 14
+        height: 16
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf5ead06f8eda249be84908e1719bde
+      internalID: 540967654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_18
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 212
+        width: 94
+        height: 31
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085edf890d084af46bd376179fac37e7
+      internalID: -1271903849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_19
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 75
+        width: 132
+        height: 168
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521b6cd3cddbb36409b0fcd9661583b1
+      internalID: -625945069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_20
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 189
+        width: 11
+        height: 27
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4133384ffdb4b4d8aa8e6cf537c4bc
+      internalID: -1051506438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_21
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3
+        width: 24
+        height: 26
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d12aae2ad41a484384bc09c70018b1b
+      internalID: 53732833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_22
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1
+        width: 36
+        height: 42
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22f1817e8cab004a84ea0e93b48b0b5
+      internalID: 864054323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_23
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1
+        width: 31
+        height: 38
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8fcbee11026f8d4b8ff52f7bb8cd7f6
+      internalID: 1776434338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hersey_24
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 2
+        width: 30
+        height: 34
+      alignment: 9
+      pivot: {x: 0.7084713, y: 0.4085706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780984b85543d5b4988cfe5f4a74fe2e
+      internalID: -1235242985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      hersey_4: 1819495729
+      hersey_9: -827764258
+      hersey_0: -298512542
+      hersey_10: -42292582
+      hersey_3: -1688163742
+      hersey_18: -1271903849
+      hersey_23: 1776434338
+      hersey_6: 19992732
+      hersey_2: 601159420
+      hersey_7: -1706493867
+      hersey_8: 56802964
+      hersey_21: 53732833
+      hersey_19: -625945069
+      hersey_12: -252760416
+      hersey_5: -2053867601
+      hersey_14: 1410976282
+      hersey_1: -57966516
+      hersey_15: -1941397601
+      hersey_11: -2074279418
+      hersey_16: -478312877
+      hersey_13: -259428460
+      hersey_20: -1051506438
+      hersey_22: 864054323
+      hersey_17: 540967654
+      hersey_24: -1235242985
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
