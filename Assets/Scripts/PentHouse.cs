@@ -11,35 +11,44 @@ public class PentHouse : Holder
     public Chicken a;
     public Chicken b;
     [SerializeField] private List<HachingChanceThing> thingy;
+    [SerializeField] private List<Egg> eggPrefabs;
+    [SerializeField] private GameObject basket;
+    private Vector3 maxCorner, minCorner;
+  
+
 
     private void Start()
     {
+	    maxCorner = basket.GetComponent<Collider2D>().bounds.max;
+	    minCorner = basket.GetComponent<Collider2D>().bounds.min;
+	    
     }
 
-    public int ChickenCombination(Chicken chick1, Chicken chick2)
+    public void ChickenCombination(Chicken chick1, Chicken chick2)
     {
-        int i = 0;
-        while ((thingy[i].sum != chick1.id + chick2.id) || (thingy[i].multiplication != chick1.id * chick2.id))
+        int i = 0, j = 0;
+        while (i < thingy.Count && (thingy[i].sum != chick1.id + chick2.id) || (thingy[i].multiplication != chick1.id * chick2.id))
         {
             i++;
         }
 
-        return thingy[i].eggChances.ChooseFromOptions().value;
+        int newEggID = thingy[i].eggChances.ChooseFromOptions().value;
+        while (newEggID != eggPrefabs[j].id && j < eggPrefabs.Count)
+        {
+	        j++;
+        }
+
+        float xPos = Random.Range(minCorner.x, maxCorner.x);
+        float yPos = Random.Range(minCorner.y, maxCorner.y);
+        Instantiate(eggPrefabs[j], new Vector3(xPos, yPos, 0), Quaternion.identity);
     }
     
     public void RemoveChickens()
     {
-	    if (a)
-	    {
-			a.Holdable = true;
-			a = null;
-	    }
-
-	    if (b)
-	    {
-			b.Holdable = true;
-			b = null;
-	    }
+	    a.Holdable = true;
+	    b.Holdable = true;
+	    a = null;
+	    b = null;
     }
 
     protected override void OnRightMouseDown()
@@ -61,7 +70,8 @@ public class PentHouse : Holder
 		        b = chicken;
 		        return;
 	        }
-    
+
+	        
     	}
     
     	public override bool OnMoveableDropped(Moveable selected)
@@ -76,6 +86,12 @@ public class PentHouse : Holder
 				chicken.pen = null;
             }
     		AddChicken(chicken);
+            
+            if (a && b)
+            {
+	            ChickenCombination(a, b);
+            }
+            
             chicken.Holdable = false;
             chicken.MovementMode(false);
     		return true;
