@@ -29,10 +29,17 @@ public class PentHouse : Holder
     
     public void RemoveChickens()
     {
-	    a.Holdable = true;
-	    b.Holdable = true;
-	    a = null;
-	    b = null;
+	    if (a)
+	    {
+			a.Holdable = true;
+			a = null;
+	    }
+
+	    if (b)
+	    {
+			b.Holdable = true;
+			b = null;
+	    }
     }
 
     protected override void OnRightMouseDown()
