@@ -7,6 +7,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3539120035290671414, guid: 5845b886767966e45be5d49e9a561453, type: 3}
+      propertyPath: speed
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -3539120035290671414, guid: 5845b886767966e45be5d49e9a561453, type: 3}
+      propertyPath: maxTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -3539120035290671414, guid: 5845b886767966e45be5d49e9a561453, type: 3}
+      propertyPath: minTime
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5577850756752360121, guid: 5845b886767966e45be5d49e9a561453, type: 3}
       propertyPath: id
       value: 4
@@ -69,3 +81,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5845b886767966e45be5d49e9a561453, type: 3}
+--- !u!1 &5232130059784315136 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9047206594257556861, guid: 5845b886767966e45be5d49e9a561453, type: 3}
+  m_PrefabInstance: {fileID: 3824225579320571005}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &-7206290657766611438
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5232130059784315136}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!114 &6888686639882127181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5232130059784315136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c422d7b77ba2b914999993d715b7014b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  maxTime: 0
+  minTime: 0
+  stop: 0
+  checkDist: 0.5
+  wallLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
