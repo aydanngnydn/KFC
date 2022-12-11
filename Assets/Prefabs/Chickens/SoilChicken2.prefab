@@ -53,12 +53,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5051241609591542032, guid: 06b184a5d0f0f7246b0e9d453a7a759c, type: 3}
       propertyPath: m_Name
-      value: Chicken (1)
+      value: SoilChicken2
       objectReference: {fileID: 0}
     - target: {fileID: 5385915191016783972, guid: 06b184a5d0f0f7246b0e9d453a7a759c, type: 3}
       propertyPath: id
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5385915191016783972, guid: 06b184a5d0f0f7246b0e9d453a7a759c, type: 3}
+      propertyPath: eggPrefab
+      value: 
+      objectReference: {fileID: 7862580948331950487, guid: 5aac0bb7ab6c13a47a774def02dc55d8, type: 3}
     - target: {fileID: 7295483574082533070, guid: 06b184a5d0f0f7246b0e9d453a7a759c, type: 3}
       propertyPath: m_Size.x
       value: 4

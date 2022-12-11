@@ -53,12 +53,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5051241609591542032, guid: 06b184a5d0f0f7246b0e9d453a7a759c, type: 3}
       propertyPath: m_Name
-      value: DevilChicken5
+      value: DevilChicken5 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5385915191016783972, guid: 06b184a5d0f0f7246b0e9d453a7a759c, type: 3}
       propertyPath: id
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5385915191016783972, guid: 06b184a5d0f0f7246b0e9d453a7a759c, type: 3}
+      propertyPath: eggPrefab
+      value: 
+      objectReference: {fileID: 5931321653463026387, guid: 15ce94bedef00fd40b56f0a3796fc9e0, type: 3}
     - target: {fileID: 7295483574082533070, guid: 06b184a5d0f0f7246b0e9d453a7a759c, type: 3}
       propertyPath: m_Size.x
       value: 2

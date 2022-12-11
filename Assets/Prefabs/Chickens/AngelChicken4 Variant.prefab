@@ -59,6 +59,10 @@ PrefabInstance:
       propertyPath: id
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5385915191016783972, guid: 06b184a5d0f0f7246b0e9d453a7a759c, type: 3}
+      propertyPath: eggPrefab
+      value: 
+      objectReference: {fileID: 7757112652420450115, guid: c626bb8099532eb4cae7b24cf6e983d9, type: 3}
     - target: {fileID: 7295483574082533070, guid: 06b184a5d0f0f7246b0e9d453a7a759c, type: 3}
       propertyPath: m_Size.x
       value: 2
