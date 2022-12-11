@@ -1,29 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections;
 using UnityEngine;
 
 public class ResourceManager : Singleton<ResourceManager>
 {
-    public Dictionary<int, int> eggDict;
-    private int money;
-    private int seed;
+    [SerializeField] [ReadOnly] private float money;
 
-    public void AddEgg(int eggID)
-    {
-        if (eggDict.ContainsKey(eggID)) eggDict[eggID] += 1;
-        
-        else eggDict.Add(eggID, 1);
-    }
 
-    public void SellEgg( int eggID)
+    public void EarnMoney(float value)
     {
-        eggDict[eggID] -= 1;
+        money += value;
     }
-
-    public bool TrySpendMoney(int _money)
+    
+    public void SpendMoney(float value)
     {
-        if (money < _money) return false;
-        else money -= _money;
-        return true;
+        if(money >= value)
+            money -= value;
     }
+    
+    public float GetMoney()
+    {
+        return money;
+    }
+    
 }

@@ -47,6 +47,7 @@ public class CursorInventoryManager: Singleton<CursorInventoryManager>
 
 	public void RemoveSelfFromInventory()
 	{
+		Inventory.OnInventory = false;
 		Inventory = null;
 	}
 

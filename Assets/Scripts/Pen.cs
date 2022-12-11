@@ -19,11 +19,9 @@ public class Pen:Holder
 		{
 			foreach (Chicken chick in chickens)
 			{
-				chick.LayEggTimer += 1;
-				
-				if (chick.layTime >= chick.LayEggTimer) break;
+				chick.LayEggTimer += Time.deltaTime;
 			}
-			yield return new WaitForSeconds(1f);
+			yield return null;
 		}
 	}
 

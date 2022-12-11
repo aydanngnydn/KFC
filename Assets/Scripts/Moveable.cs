@@ -4,7 +4,7 @@ using UnityEngine;
 public class Moveable: Mousable
 {
 	public bool Holdable = true;
-	public bool OnInventory { get; private set; }
+	public bool OnInventory { get; set; } = false;
 	private Vector3 _mousePositionFrameBefore;
 	private Vector3 _startPos;
 	protected override void OnMouseHover()

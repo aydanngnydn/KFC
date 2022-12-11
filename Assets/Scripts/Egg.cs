@@ -10,4 +10,10 @@ public class Egg : Moveable
     public float hatchTime;
     [SerializeField] float value;
 
+    protected override void OnRightMouseDown()
+    {
+        base.OnRightMouseDown();
+        ResourceManager.I.EarnMoney(value);
+        Destroy(gameObject);
+    }
 }
