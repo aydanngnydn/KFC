@@ -14,7 +14,6 @@ public class PentHouse : Holder
 
     private void Start()
     {
-        Debug.Log(ChickenCombination(a,b));
     }
 
     public int ChickenCombination(Chicken chick1, Chicken chick2)
@@ -27,6 +26,54 @@ public class PentHouse : Holder
 
         return thingy[i].eggChances.ChooseFromOptions().value;
     }
+    
+    public void RemoveChickens()
+    {
+	    a.Holdable = true;
+	    b.Holdable = true;
+	    a = null;
+	    b = null;
+    }
+
+    protected override void OnRightMouseDown()
+    {
+	    base.OnRightMouseDown();
+	    RemoveChickens();
+    }
+
+    public void AddChicken(Chicken chicken)
+    	{
+	        if (!a && chicken != b)
+	        {
+		        a = chicken;
+		        return;
+	        }
+
+	        if (!b && chicken != a)
+	        {
+		        b = chicken;
+		        return;
+	        }
+    
+    	}
+    
+    	public override bool OnMoveableDropped(Moveable selected)
+    	{
+    		var chicken = selected as Chicken;
+    		
+    		if (!chicken || (a && b)) return false;
+
+            if (chicken.pen)
+            {
+	            chicken.pen.RemoveChicken(chicken);
+				chicken.pen = null;
+            }
+    		AddChicken(chicken);
+            chicken.Holdable = false;
+            chicken.MovementMode(false);
+    		return true;
+    
+    	}
 }
 
 [Serializable]

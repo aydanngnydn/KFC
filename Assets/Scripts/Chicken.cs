@@ -40,6 +40,7 @@ public class Chicken : Moveable
 
     private float _layEggTimer = 0;
     private Movement _movement;
+    private bool movementMode = true;
     
     
     private void Start()
@@ -60,13 +61,19 @@ public class Chicken : Moveable
     {
         base.OnLeftMouseDown();
         if (!Holdable) return;
+        movementMode = _movement.stop;
         _movement.stop = true;
     }
     protected override void OnLeftMouseUp()
     {
         base.OnLeftMouseUp();
         if (!Holdable) return;
-        _movement.stop = false;
+        _movement.stop = movementMode;
+    }
+
+    public void MovementMode(bool move)
+    {
+        _movement.stop = !move;
     }
 
     private void LayEgg()
