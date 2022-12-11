@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Moveable: Mousable
 {
 	public bool Holdable = true;
+	[SerializeField] public UnityEvent onPickUp;
 	public bool OnInventory { get; set; } = false;
 	private Vector3 _mousePositionFrameBefore;
 	private Vector3 _startPos;
@@ -14,6 +16,7 @@ public class Moveable: Mousable
 	protected override void OnLeftMouseDown()
 	{
 		if (!Holdable) return;
+		onPickUp?.Invoke();
 		OnInventory = CursorInventoryManager.I.AddToInventory(this);
 		_startPos = transform.position;
 		_mousePositionFrameBefore = Input.mousePosition;

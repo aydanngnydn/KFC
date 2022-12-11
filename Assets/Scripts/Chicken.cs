@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
 public class Chicken : Moveable
@@ -13,6 +14,9 @@ public class Chicken : Moveable
     [SerializeField] protected int defaultOldAgeSecond = 300;
     [SerializeField] public int id;
     [SerializeField] public GameObject OldChickenPrefab;
+    [SerializeField] public UnityEvent OnDie;
+
+
 
     
     [Header("Genes")]
@@ -85,6 +89,7 @@ public class Chicken : Moveable
     {
         base.OnRightMouseDown();
         if (!Holdable) return;
+        OnDie?.Invoke();
         Destroy(gameObject);
     }
 

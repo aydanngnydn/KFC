@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
 public class PentHouse : Holder
@@ -14,6 +15,8 @@ public class PentHouse : Holder
     [SerializeField] private List<Egg> eggPrefabs;
     [SerializeField] private GameObject basket;
     private Vector3 maxCorner, minCorner;
+
+    [SerializeField] private UnityEvent onEyleme;
   
 
 
@@ -26,6 +29,7 @@ public class PentHouse : Holder
 
     public void ChickenCombination(Chicken chick1, Chicken chick2)
     {
+	    onEyleme?.Invoke();
         int i = 0, j = 0;
         while (i < thingy.Count )
         {

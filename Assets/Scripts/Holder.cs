@@ -1,7 +1,10 @@
-﻿using UnityEngine.UI;
+﻿using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Holder : Mousable
 {
+	[SerializeField] private UnityEvent OnMoveableAdded;
 	protected override void OnMouseHover()
 	{
 		
@@ -34,6 +37,7 @@ public class Holder : Mousable
 
 	public virtual bool OnMoveableDropped(Moveable selected)
 	{
+		OnMoveableAdded?.Invoke();
 		return true;
 	}
 }
