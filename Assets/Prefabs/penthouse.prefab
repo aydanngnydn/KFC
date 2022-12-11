@@ -1,5 +1,115 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3909989660312763045
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4674227568647311051}
+  - component: {fileID: 5401307585211905544}
+  - component: {fileID: 1354295689309995397}
+  - component: {fileID: 1184216773627664148}
+  m_Layer: 6
+  m_Name: Basket
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4674227568647311051
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3909989660312763045}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.05406412, y: 0.05406412, z: 0.05406412}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7771916168977677747}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5401307585211905544
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3909989660312763045}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1354295689309995397
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3909989660312763045}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!61 &1184216773627664148
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3909989660312763045}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00000023841858, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &7771916168977677745
 GameObject:
   m_ObjectHideFlags: 0
@@ -31,7 +141,8 @@ Transform:
   m_LocalPosition: {x: 3.7705092, y: 0.40732613, z: 0.010177476}
   m_LocalScale: {x: 30.99, y: 30.99, z: 30.99}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 4674227568647311051}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -58,7 +169,7 @@ MonoBehaviour:
     chick2: 1
   - eggChances:
       chickenTypes:
-      - value: 6
+      - value: 1
         weight: 3
       - value: 3
         weight: 7
@@ -68,7 +179,7 @@ MonoBehaviour:
       chickenTypes:
       - value: 4
         weight: 7
-      - value: 6
+      - value: 1
         weight: 3
     chick1: 1
     chick2: 3
@@ -76,7 +187,7 @@ MonoBehaviour:
       chickenTypes:
       - value: 5
         weight: 7
-      - value: 6
+      - value: 1
         weight: 3
     chick1: 3
     chick2: 2
@@ -84,7 +195,7 @@ MonoBehaviour:
       chickenTypes:
       - value: 7
         weight: 7
-      - value: 6
+      - value: 1
         weight: 3
     chick1: 4
     chick2: 4
@@ -92,7 +203,7 @@ MonoBehaviour:
       chickenTypes:
       - value: 2
         weight: 7
-      - value: 6
+      - value: 1
         weight: 3
     chick1: 2
     chick2: 2
@@ -100,7 +211,7 @@ MonoBehaviour:
       chickenTypes:
       - value: 3
         weight: 7
-      - value: 6
+      - value: 1
         weight: 3
     chick1: 3
     chick2: 3
@@ -108,7 +219,7 @@ MonoBehaviour:
       chickenTypes:
       - value: 5
         weight: 7
-      - value: 6
+      - value: 1
         weight: 3
     chick1: 5
     chick2: 5
@@ -116,7 +227,7 @@ MonoBehaviour:
       chickenTypes:
       - value: 7
         weight: 7
-      - value: 6
+      - value: 1
         weight: 3
     chick1: 7
     chick2: 7
@@ -126,7 +237,7 @@ MonoBehaviour:
         weight: 4
       - value: 1
         weight: 4
-      - value: 6
+      - value: 1
         weight: 2
     chick1: 1
     chick2: 4
@@ -136,7 +247,7 @@ MonoBehaviour:
         weight: 4
       - value: 1
         weight: 4
-      - value: 6
+      - value: 1
         weight: 2
     chick1: 1
     chick2: 5
@@ -146,7 +257,7 @@ MonoBehaviour:
         weight: 4
       - value: 1
         weight: 4
-      - value: 6
+      - value: 1
         weight: 2
     chick1: 1
     chick2: 7
@@ -156,7 +267,7 @@ MonoBehaviour:
         weight: 4
       - value: 4
         weight: 4
-      - value: 6
+      - value: 1
         weight: 2
     chick1: 2
     chick2: 4
@@ -166,7 +277,7 @@ MonoBehaviour:
         weight: 4
       - value: 5
         weight: 4
-      - value: 6
+      - value: 1
         weight: 2
     chick1: 2
     chick2: 5
@@ -176,7 +287,7 @@ MonoBehaviour:
         weight: 4
       - value: 7
         weight: 4
-      - value: 6
+      - value: 1
         weight: 2
     chick1: 2
     chick2: 7
@@ -186,7 +297,7 @@ MonoBehaviour:
         weight: 4
       - value: 4
         weight: 4
-      - value: 6
+      - value: 1
         weight: 2
     chick1: 3
     chick2: 4
@@ -196,7 +307,7 @@ MonoBehaviour:
         weight: 4
       - value: 5
         weight: 4
-      - value: 6
+      - value: 1
         weight: 2
     chick1: 3
     chick2: 5
@@ -206,7 +317,7 @@ MonoBehaviour:
         weight: 4
       - value: 7
         weight: 4
-      - value: 6
+      - value: 1
         weight: 2
     chick1: 3
     chick2: 7
@@ -216,7 +327,7 @@ MonoBehaviour:
         weight: 4
       - value: 5
         weight: 4
-      - value: 6
+      - value: 1
         weight: 2
     chick1: 4
     chick2: 5
@@ -226,7 +337,7 @@ MonoBehaviour:
         weight: 4
       - value: 7
         weight: 4
-      - value: 6
+      - value: 1
         weight: 2
     chick1: 4
     chick2: 7
@@ -236,10 +347,19 @@ MonoBehaviour:
         weight: 4
       - value: 7
         weight: 4
-      - value: 6
+      - value: 1
         weight: 2
     chick1: 5
     chick2: 7
+  eggPrefabs:
+  - {fileID: 6439898679432166477, guid: 27244c925eddcb34b81ea009c6212934, type: 3}
+  - {fileID: -6695346334990238337, guid: 752eb5b23e955574e8c74b2b0a1c9af1, type: 3}
+  - {fileID: -7428886254036957643, guid: ec326940f5ee8a24bb6e41db91df0a16, type: 3}
+  - {fileID: 4268010402132465105, guid: 0e5be1f98a840894e82a0788627a028c, type: 3}
+  - {fileID: 7602512002748648972, guid: 3fa3427e5b1e2404a90b99a1cd8ec7e1, type: 3}
+  - {fileID: 852677449923938360, guid: 7b0c8b659cf7bc9458387c6fc025e1b6, type: 3}
+  - {fileID: 5609865800503707992, guid: f6382d175538f9f4296b905407fa0ae6, type: 3}
+  basket: {fileID: 3909989660312763045}
 --- !u!61 &3656641171093119175
 BoxCollider2D:
   m_ObjectHideFlags: 0

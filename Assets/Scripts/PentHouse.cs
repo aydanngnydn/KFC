@@ -27,15 +27,22 @@ public class PentHouse : Holder
     public void ChickenCombination(Chicken chick1, Chicken chick2)
     {
         int i = 0, j = 0;
-        while (i < thingy.Count && (thingy[i].sum != chick1.id + chick2.id) || (thingy[i].multiplication != chick1.id * chick2.id))
+        while (i < thingy.Count )
         {
-            i++;
+	        if ((thingy[i].sum != chick1.id + chick2.id) || (thingy[i].multiplication != chick1.id * chick2.id))
+	        {
+		        i++;
+	        }
+	        else break;
+
         }
 
         int newEggID = thingy[i].eggChances.ChooseFromOptions().value;
-        while (newEggID != eggPrefabs[j].id && j < eggPrefabs.Count)
+        while ( j < eggPrefabs.Count )
         {
-	        j++;
+	        if (newEggID != eggPrefabs[j].id)
+		        j++;
+	        else break;
         }
 
         float xPos = Random.Range(minCorner.x, maxCorner.x);
