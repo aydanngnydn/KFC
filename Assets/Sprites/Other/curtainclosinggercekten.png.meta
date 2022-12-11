@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 42fc65d3c03117542b1e5e39788e817f
+guid: e43e2d019c5ac654196b315a0c843be4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -67,8 +67,8 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
-    textureFormat: 4
+    resizeAlgorithm: 0
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -104,190 +104,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: curtainclosing_0
+      name: curtainclosinggercekten_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 500
         height: 500
-      alignment: 9
-      pivot: {x: 0.1353639, y: 0.9016275}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce654783f1a6f2044a8cb86d662d6d42
-      internalID: 845918113
+      spriteID: 618846ad11ded384ab6740664a1e28e4
+      internalID: -469256319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: curtainclosing_1
+      name: curtainclosinggercekten_1
       rect:
         serializedVersion: 2
         x: 500
         y: 0
         width: 500
         height: 500
-      alignment: 9
-      pivot: {x: 0.1353639, y: 0.9016275}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d1fedc14a209814c806a6ce788f24e0
-      internalID: -1188295793
+      spriteID: af40d639d61f35c4baaba8be9760776b
+      internalID: -1381894815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: curtainclosing_2
+      name: curtainclosinggercekten_2
       rect:
         serializedVersion: 2
         x: 1000
         y: 0
         width: 500
         height: 500
-      alignment: 9
-      pivot: {x: 0.1353639, y: 0.9016275}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cc1b945533e03348b7098a26975afcb
-      internalID: 118718627
+      spriteID: 501353f270b20c54484bd04f8a0a064a
+      internalID: 2096279722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: curtainclosing_3
+      name: curtainclosinggercekten_3
       rect:
         serializedVersion: 2
         x: 1500
         y: 0
         width: 500
         height: 500
-      alignment: 9
-      pivot: {x: 0.1353639, y: 0.9016275}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a95cf18610380640ae1b4454e2083ff
-      internalID: -555839224
+      spriteID: a15e150ec10e3f848a0482870ad99572
+      internalID: -1904810138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: curtainclosing_4
+      name: curtainclosinggercekten_4
       rect:
         serializedVersion: 2
         x: 2000
         y: 0
         width: 500
         height: 500
-      alignment: 9
-      pivot: {x: 0.1353639, y: 0.9016275}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7a870e13f83bd641a83b3d43f4c7857
-      internalID: 619501327
+      spriteID: df5401750e8289a4487f96a309a04480
+      internalID: 933013757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: curtainclosing_5
+      name: curtainclosinggercekten_5
       rect:
         serializedVersion: 2
         x: 2500
         y: 0
         width: 500
         height: 500
-      alignment: 9
-      pivot: {x: 0.1353639, y: 0.9016275}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81bf9d2a098210244844dbc1a5e9954e
-      internalID: 1385167046
+      spriteID: 2dc8f8c84c9706a469e35479124769f8
+      internalID: 1883396129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: curtainclosing_6
+      name: curtainclosinggercekten_6
       rect:
         serializedVersion: 2
         x: 3000
         y: 0
         width: 500
         height: 500
-      alignment: 9
-      pivot: {x: 0.1353639, y: 0.9016275}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0ca1e33d6b6bc342ad5fe65c0af1e09
-      internalID: 807922837
+      spriteID: d7ffa00e07a9b184cb25a3771395b78a
+      internalID: 365258020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: curtainclosing_7
+      name: curtainclosinggercekten_7
       rect:
         serializedVersion: 2
         x: 3500
         y: 0
         width: 500
         height: 500
-      alignment: 9
-      pivot: {x: 0.1353639, y: 0.9016275}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 784b0a33fde511743b858add16241498
-      internalID: 1510904762
+      spriteID: 004c1c88fa0a720469f92f0cc1478c3a
+      internalID: 2038801389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: curtainclosing_8
+      name: curtainclosinggercekten_8
       rect:
         serializedVersion: 2
         x: 4000
         y: 0
         width: 500
         height: 500
-      alignment: 9
-      pivot: {x: 0.1353639, y: 0.9016275}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6694ce450834671419792cec15203fec
-      internalID: 149008970
+      spriteID: ddad28bf94280274b9ecd2fa23c62654
+      internalID: -932795107
       vertices: []
       indices: 
       edges: []
@@ -303,15 +303,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      curtainclosing_4: 619501327
-      curtainclosing_0: 845918113
-      curtainclosing_2: 118718627
-      curtainclosing_3: -555839224
-      curtainclosing_5: 1385167046
-      curtainclosing_1: -1188295793
-      curtainclosing_6: 807922837
-      curtainclosing_8: 149008970
-      curtainclosing_7: 1510904762
+      curtainclosinggercekten_3: -1904810138
+      curtainclosinggercekten_8: -932795107
+      curtainclosinggercekten_1: -1381894815
+      curtainclosinggercekten_0: -469256319
+      curtainclosinggercekten_7: 2038801389
+      curtainclosinggercekten_5: 1883396129
+      curtainclosinggercekten_2: 2096279722
+      curtainclosinggercekten_6: 365258020
+      curtainclosinggercekten_4: 933013757
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
