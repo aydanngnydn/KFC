@@ -13,6 +13,7 @@ public class Movement : MonoBehaviour
     private bool move = true, layDown = false, aydo = false, hovered = false;
     private float xDir, yDir;
     private Vector3 dirVector;
+    public bool stop = false;
 
     private void Start()
     {
@@ -21,6 +22,7 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
+        if(stop) return;
         if (move && !layDown)
         {
             RaycastHit2D wallInfo = Physics2D.Raycast(transform.position, Vector2.up, 1f);

@@ -5,7 +5,6 @@ using UnityEngine;
 public class Hatchery : Holder
 {
 	public Egg incubatingEgg;
-	public Moveable chick;
 	
 	private void Start()
 	{
@@ -36,8 +35,7 @@ public class Hatchery : Holder
 
 	private void MakeChick()
 	{
-		Debug.Log($"BORN AND STUFF");
-		//TODO:implement with chick or smtn
+		Instantiate(incubatingEgg.chick, incubatingEgg.transform.position, incubatingEgg.transform.rotation, null);
 	}
 
 	public void DeleteEgg()
@@ -60,6 +58,7 @@ public class Hatchery : Holder
 		if (!egg || incubatingEgg) return false;
 		
 		IncubateEgg(egg);
+		egg.Holdable = false;
 		return true;
 
 	}

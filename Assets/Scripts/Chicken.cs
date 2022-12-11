@@ -23,7 +23,6 @@ public class Chicken : Moveable
 
     public Pen pen;
 
-
     public float LayEggTimer
     {
         get => _layEggTimer;
@@ -40,10 +39,12 @@ public class Chicken : Moveable
     }
 
     private float _layEggTimer = 0;
+    private Movement _movement;
     
     
     private void Start()
     {
+        _movement = GetComponent<Movement>();
         layTime = (defaultEggLayingSecond / LaySpeed) + Random.Range(-5, 6);
         StartCoroutine(GetOlder());
     }
@@ -55,7 +56,20 @@ public class Chicken : Moveable
 
     }
 
-    protected void LayEgg()
+    protected override void OnLeftMouseDown()
+    {
+        base.OnLeftMouseDown();
+        if (!Holdable) return;
+        _movement.stop = true;
+    }
+    protected override void OnLeftMouseUp()
+    {
+        base.OnLeftMouseUp();
+        if (!Holdable) return;
+        _movement.stop = false;
+    }
+
+    private void LayEgg()
     {
        Instantiate(eggPrefab, transform.position, transform.rotation, null);
        

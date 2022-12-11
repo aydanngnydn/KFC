@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Moveable: Mousable
 {
+	public bool Holdable = true;
 	public bool OnInventory { get; private set; }
 	private Vector3 _mousePositionFrameBefore;
 	private Vector3 _startPos;
@@ -12,6 +13,7 @@ public class Moveable: Mousable
 
 	protected override void OnLeftMouseDown()
 	{
+		if (!Holdable) return;
 		OnInventory = CursorInventoryManager.I.AddToInventory(this);
 		_startPos = transform.position;
 		_mousePositionFrameBefore = Input.mousePosition;
