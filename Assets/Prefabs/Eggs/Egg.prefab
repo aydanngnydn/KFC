@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5051241609591542032
+--- !u!1 &3360383899776949608
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,56 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2807895413494282606}
-  - component: {fileID: 7295483574082533070}
-  - component: {fileID: 5385915191016783972}
-  - component: {fileID: 387083696752943217}
+  - component: {fileID: 793110556050744929}
+  - component: {fileID: -5672169488918151905}
+  - component: {fileID: -1460593187681164039}
   m_Layer: 0
-  m_Name: Chicken
+  m_Name: Egg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2807895413494282606
+--- !u!4 &793110556050744929
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5051241609591542032}
+  m_GameObject: {fileID: 3360383899776949608}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.859942, y: -3.3313909, z: 0.010177493}
+  m_LocalPosition: {x: -6.7428575, y: -4.71878, z: -0.0016485816}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7295483574082533070
+--- !u!114 &-5672169488918151905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3360383899776949608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0dfb3c6e09acd349b5f8b840aaabd02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Holdable: 1
+  chick: {fileID: 0}
+  id: 0
+  timer: 0
+  hatchTime: 0
+  value: 0
+--- !u!212 &-1460593187681164039
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5051241609591542032}
+  m_GameObject: {fileID: 3360383899776949608}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -86,43 +103,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5385915191016783972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5051241609591542032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 662df3e1b9c822b4b8bb85f7a7c8a7bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Holdable: 1
-  age: 0
-  hunger: 0
-  eggPrefab: {fileID: 0}
-  defaultEggLayingSecond: 30
-  defaultOldAgeSecond: 300
-  id: 0
-  OldChickenPrefab: {fileID: 0}
-  foodEff: 1
-  agingSpeed: 1
-  LaySpeed: 1
-  pen: {fileID: 0}
---- !u!114 &387083696752943217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5051241609591542032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c422d7b77ba2b914999993d715b7014b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1.2
-  maxTime: 4
-  minTime: 1
-  stop: 0
