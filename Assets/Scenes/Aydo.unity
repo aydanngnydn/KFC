@@ -245,7 +245,7 @@ MonoBehaviour:
   hunger: 0
   hungerRate: 0
   eggPrefab: {fileID: 0}
-  id: 1
+  id: 2
   foodEff: 0
   agingSpeed: 0
   pen: {fileID: 0}
@@ -484,6 +484,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5561051798064783591, guid: e5d82e54e787e06408282ae22dae68bf, type: 3}
+      propertyPath: a
+      value: 
+      objectReference: {fileID: 1303816521}
+    - target: {fileID: 5561051798064783591, guid: e5d82e54e787e06408282ae22dae68bf, type: 3}
+      propertyPath: b
+      value: 
+      objectReference: {fileID: 1010167522}
     - target: {fileID: 8946108512737725845, guid: e5d82e54e787e06408282ae22dae68bf, type: 3}
       propertyPath: m_Name
       value: Pena

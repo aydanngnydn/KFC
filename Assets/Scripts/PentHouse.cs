@@ -11,20 +11,16 @@ public class PentHouse : MonoBehaviour
     public Chicken a;
     public Chicken b;
     [SerializeField] private List<HachingChanceThing> thingy;
-    Egg newEgg;
 
-
-    public Egg ChickenCombination(Chicken chick1, Chicken chick2)
+    public int ChickenCombination(Chicken chick1, Chicken chick2)
     {
-        if (chick1.id == chick2.id)
+        int i = 0;
+        while ((thingy[i].sum != chick1.id + chick2.id) && (thingy[i].multiplication != chick1.id * chick2.id))
         {
-            newEgg.id = chick1.id;
+            i++;
         }
-        else
-        {
-            //newEgg.id = typeList.GetRandomElement();
-        }
-        return newEgg;
+
+        return thingy[i].eggChances.ChooseFromOptions().value;
     }
 }
 
@@ -44,19 +40,8 @@ public class HachingChanceThing
 public class WeightedList<T>
 {
     public List<WeightedElement<T>> chickenTypes;
-    private int totalWeight = 0;
-    
-    public int GetRandomElement() 
-    {
-        foreach (WeightedElement<T> el in chickenTypes)
-        {
-            totalWeight += el.weight;
-        }
-
-        return ChooseFromOptions().value;
-    }
-
-    private WeightedElement<T> ChooseFromOptions()
+    private int totalWeight = 10;
+    public WeightedElement<T> ChooseFromOptions()
     {
         int rand = Random.Range(0, totalWeight + 1);
         int pos = 0;
