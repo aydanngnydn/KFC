@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 8366899761137196023}
   - component: {fileID: 5577850756752360121}
   - component: {fileID: -7551565649052083521}
-  m_Layer: 0
+  - component: {fileID: -6874654353895694824}
+  - component: {fileID: -3539120035290671414}
+  m_Layer: 7
   m_Name: BabyChick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,3 +119,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &-6874654353895694824
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9047206594257556861}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!114 &-3539120035290671414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9047206594257556861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c422d7b77ba2b914999993d715b7014b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.7
+  maxTime: 0.5
+  minTime: 1.2
+  stop: 0
+  checkDist: 0.5
+  wallLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
