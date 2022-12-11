@@ -14,6 +14,8 @@ public class Movement : MonoBehaviour
     private float xDir, yDir;
     private Vector3 dirVector;
     public bool stop = false;
+    [SerializeField] private float checkDist = .5f;
+    [SerializeField] private LayerMask wallLayerMask;
 
     private void Start()
     {
@@ -25,12 +27,20 @@ public class Movement : MonoBehaviour
         if(stop) return;
         if (move && !layDown)
         {
-            RaycastHit2D wallInfo = Physics2D.Raycast(transform.position, Vector2.up, 1f);
-            Debug.DrawLine (transform.position, wallInfo.point, Color.cyan);
-            if (wallInfo.collider &&  wallInfo.collider.tag == "Wall")
+            RaycastHit2D wallInfo = Physics2D.Raycast(transform.position, dirVector, checkDist,wallLayerMask);
+
+            var normal = wallInfo.normal;
+
+            if (normal.x != 0)
             {
-                dirVector *= -1;
+                dirVector = new Vector3(-dirVector.x, dirVector.y, dirVector.z);
             }
+            if (normal.y != 0)
+            {
+                dirVector = new Vector3(dirVector.x, -dirVector.y, dirVector.z);
+            }
+
+            Debug.DrawLine(transform.position,transform.position + dirVector * checkDist,Color.green);
             transform.Translate(dirVector * (speed * Time.deltaTime));
         }
         else if (!move && layDown)

@@ -25,7 +25,7 @@ public class BabyChick : Chicken
             yield return new WaitForSeconds(1f);
         }
 
-        Instantiate(chicken, transform.position, Quaternion.identity);
+        Instantiate(chicken, transform.position, transform.rotation,null);
         Destroy(gameObject);
 
     }

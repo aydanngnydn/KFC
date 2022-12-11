@@ -80,6 +80,14 @@ public class Chicken : Moveable
         movementMode = _movement.stop;
         _movement.stop = true;
     }
+
+    protected override void OnRightMouseDown()
+    {
+        base.OnRightMouseDown();
+        if (!Holdable) return;
+        Destroy(gameObject);
+    }
+
     protected override void OnLeftMouseUp()
     {
         base.OnLeftMouseUp();
