@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 402708975361428436}
   - component: {fileID: 8486363774423393833}
   - component: {fileID: 5887361943011927223}
-  m_Layer: 0
+  - component: {fileID: 6197549957714907374}
+  - component: {fileID: 948222485573450110}
+  m_Layer: 7
   m_Name: OldChicken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,3 +118,44 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &6197549957714907374
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522802384616118522}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5b47c1955346f6a4d845ab0f6820f519, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &948222485573450110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522802384616118522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c422d7b77ba2b914999993d715b7014b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.6
+  maxTime: 1
+  minTime: 1.5
+  stop: 1
+  checkDist: 0.5
+  wallLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  _animator: {fileID: 6197549957714907374}
