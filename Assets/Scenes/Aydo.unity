@@ -245,9 +245,11 @@ MonoBehaviour:
   hunger: 0
   hungerRate: 0
   eggPrefab: {fileID: 0}
+  defaultEggLayingSecond: 30
   id: 2
   foodEff: 0
   agingSpeed: 0
+  LaySpeed: 1
   pen: {fileID: 0}
 --- !u!114 &1010167523
 MonoBehaviour:
@@ -473,9 +475,11 @@ MonoBehaviour:
   hunger: 0
   hungerRate: 0
   eggPrefab: {fileID: 0}
-  id: 1
+  defaultEggLayingSecond: 30
+  id: 7
   foodEff: 0
   agingSpeed: 0
+  LaySpeed: 2
   pen: {fileID: 0}
 --- !u!1001 &8946108512643489304
 PrefabInstance:

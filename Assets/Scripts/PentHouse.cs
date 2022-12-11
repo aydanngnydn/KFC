@@ -12,6 +12,11 @@ public class PentHouse : MonoBehaviour
     public Chicken b;
     [SerializeField] private List<HachingChanceThing> thingy;
 
+    private void Start()
+    {
+        Debug.Log(ChickenCombination(a,b));
+    }
+
     public int ChickenCombination(Chicken chick1, Chicken chick2)
     {
         int i = 0;
