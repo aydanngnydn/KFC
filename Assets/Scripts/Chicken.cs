@@ -7,12 +7,12 @@ using Random = UnityEngine.Random;
 public class Chicken : Moveable
 {
     [SerializeField] protected float age = 0;
-    [SerializeField] protected float agingRate;
     [SerializeField] protected float hunger;
-    [SerializeField] protected float hungerRate;
     [SerializeField] protected GameObject eggPrefab;
     [SerializeField] protected int defaultEggLayingSecond = 30;
+    [SerializeField] protected int defaultOldAgeSecond = 300;
     [SerializeField] public int id;
+    [SerializeField] public GameObject OldChickenPrefab;
 
     
     [Header("Genes")]
@@ -38,23 +38,39 @@ public class Chicken : Moveable
         }
     }
 
+    private float oldAge = 0;
     private float _layEggTimer = 0;
-    private Movement _movement;
+    protected Movement _movement;
     private bool movementMode = true;
     
     
-    private void Start()
+    protected virtual void Start()
     {
         _movement = GetComponent<Movement>();
+        oldAge = defaultOldAgeSecond * agingSpeed + Random.Range(-75,76);
         layTime = (defaultEggLayingSecond / LaySpeed) + Random.Range(-5, 6);
         StartCoroutine(GetOlder());
     }
 
-    private IEnumerator GetOlder()
+    protected virtual IEnumerator GetOlder()
     {
-        age += 1;
-        yield return new WaitForSeconds(agingSpeed);
+        while (true)
+        {
+            age += Time.deltaTime;
+            if (oldAge <= age)
+            {
+                GetOld();
+            }
+            yield return null;
+        }
 
+    }
+
+    protected virtual void GetOld()
+    {
+        Instantiate(OldChickenPrefab, transform.position, transform.rotation, null);
+        
+        Destroy(gameObject);
     }
 
     protected override void OnLeftMouseDown()
@@ -76,7 +92,7 @@ public class Chicken : Moveable
         _movement.stop = !move;
     }
 
-    private void LayEgg()
+    protected virtual void LayEgg()
     {
        Instantiate(eggPrefab, transform.position, transform.rotation, null);
        

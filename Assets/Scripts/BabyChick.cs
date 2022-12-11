@@ -1,11 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class BabyChick : Moveable
+public class BabyChick : Chicken
 {
-    [SerializeField] int chickenTime;
+    [SerializeField] int chickenTime = 15;
     private GameObject chicken;
     private int timer = 0;
     
@@ -27,5 +28,14 @@ public class BabyChick : Moveable
         Instantiate(chicken, transform.position, Quaternion.identity);
         Destroy(gameObject);
 
+    }
+
+    protected override IEnumerator GetOlder()
+    {
+        yield return null;
+    }
+
+    protected override void LayEgg()
+    {
     }
 }
