@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Egg : Moveable
 {
-    private Chicken chicken;
+    public Chicken chicken;
     public int id;
-    [SerializeField] public float timer = 0, hatchTime;
+    public float timer = 0;
+    public float hatchTime;
     [SerializeField] float value;
 
 }
