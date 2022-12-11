@@ -51,7 +51,6 @@ public class Pen:Holder
 		if (!chicken || chickens.Count >= capacity) return false;
 		
 		AddChicken(chicken);
-		chicken.Holdable = false;
 
 		return true;
 

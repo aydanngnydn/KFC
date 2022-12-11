@@ -6,7 +6,7 @@ using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class PentHouse : MonoBehaviour
+public class PentHouse : Holder
 {
     public Chicken a;
     public Chicken b;
