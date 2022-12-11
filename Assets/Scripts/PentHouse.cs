@@ -20,7 +20,7 @@ public class PentHouse : Holder
     public int ChickenCombination(Chicken chick1, Chicken chick2)
     {
         int i = 0;
-        while ((thingy[i].sum != chick1.id + chick2.id) && (thingy[i].multiplication != chick1.id * chick2.id))
+        while ((thingy[i].sum != chick1.id + chick2.id) || (thingy[i].multiplication != chick1.id * chick2.id))
         {
             i++;
         }

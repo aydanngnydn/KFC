@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class BabyChick : Moveable
 {
-    [SerializeField] private Chicken _chicken;
     [SerializeField] int chickenTime;
+    private GameObject chicken;
     private int timer = 0;
     
 
@@ -23,5 +23,9 @@ public class BabyChick : Moveable
             timer++;
             yield return new WaitForSeconds(1f);
         }
+
+        Instantiate(chicken, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+
     }
 }
