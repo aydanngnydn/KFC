@@ -7,6 +7,7 @@ public class Hatchery : Holder
 {
 	public Egg incubatingEgg;
 
+	private bool eggHatched = false;
 	[SerializeField] private UnityEvent OnEggHatch;
 	
 	private void Start()
@@ -21,8 +22,9 @@ public class Hatchery : Holder
 			yield return null;
 			if (!incubatingEgg) continue;
 			incubatingEgg.timer += Time.deltaTime;
-			if (incubatingEgg.timer >= incubatingEgg.hatchTime)
+			if (incubatingEgg.timer >= incubatingEgg.hatchTime && !eggHatched)
 			{
+				eggHatched = true;
 				HatchEgg();
 			}
 		}
@@ -33,19 +35,36 @@ public class Hatchery : Holder
 	public void HatchEgg()
 	{
 		OnEggHatch?.Invoke();
-		MakeChick();
 		DeleteEgg();
+		StartCoroutine(LateInstantiate());
+	}
+
+	private IEnumerator LateInstantiate()
+	{
+		var t = 0f;
+
+		while (t < 2.51f)
+		{
+			t += Time.deltaTime;
+			yield return null;
+		}
+		MakeChick();
 	}
 
 	private void MakeChick()
 	{
+		Debug.Log($"{incubatingEgg == null}");
 		Instantiate(incubatingEgg.chick, incubatingEgg.transform.position, incubatingEgg.transform.rotation, null);
+		Debug.Log($"{incubatingEgg.chick}");
+
+		Destroy(incubatingEgg.gameObject);
+		incubatingEgg = null;
+
 	}
 
 	public void DeleteEgg()
 	{
-		Destroy(incubatingEgg.gameObject);
-		incubatingEgg = null;
+		incubatingEgg._animator.SetTrigger("Hatch");
 	}
 	
 	public bool IncubateEgg(Egg egg)
@@ -63,6 +82,7 @@ public class Hatchery : Holder
 		
 		IncubateEgg(egg);
 		egg.Holdable = false;
+		eggHatched = false;
 		return true;
 
 	}

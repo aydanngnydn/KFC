@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3559847166897267948}
   - component: {fileID: 3717528607344456476}
   - component: {fileID: -7001730446242833132}
+  - component: {fileID: -6902954712375047310}
   m_Layer: 7
   m_Name: Egg
   m_TagString: Untagged
@@ -120,6 +121,7 @@ MonoBehaviour:
   timer: 0
   hatchTime: 5
   value: 0
+  _animator: {fileID: -6902954712375047310}
 --- !u!58 &3717528607344456476
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -232,3 +234,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &-6902954712375047310
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8929904109290735498}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d284a2e56a907ab4f997c11ccb87341b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

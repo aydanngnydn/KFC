@@ -8,7 +8,8 @@ public class Egg : Moveable
     public int id;
     public float timer = 0;
     public float hatchTime;
-    [SerializeField] float value;
+    [SerializeField] private  float value;
+    public Animator _animator;
 
     protected override void OnRightMouseDown()
     {

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -7551565649052083521}
   - component: {fileID: -6874654353895694824}
   - component: {fileID: -3539120035290671414}
+  - component: {fileID: 5017861821518600287}
   m_Layer: 7
   m_Name: BabyChick
   m_TagString: Untagged
@@ -155,3 +156,25 @@ MonoBehaviour:
   wallLayerMask:
     serializedVersion: 2
     m_Bits: 256
+  _animator: {fileID: 0}
+  _spriteRenderer: {fileID: 0}
+--- !u!95 &5017861821518600287
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9047206594257556861}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: de8e046cbd4b7fb4386194e8682b64ac, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
