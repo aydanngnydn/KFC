@@ -89,6 +89,7 @@ public class Chicken : Moveable
     {
         base.OnRightMouseDown();
         if (!Holdable) return;
+        pen.RemoveChicken(this);
         OnDie?.Invoke();
         Destroy(gameObject);
     }

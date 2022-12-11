@@ -104,13 +104,13 @@ MonoBehaviour:
   onPickUp:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8300000, guid: ff241146de072cf498ab06af1aafd7d0, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 2292217682343017834}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -119,8 +119,8 @@ MonoBehaviour:
   age: 0
   hunger: 0
   eggPrefab: {fileID: 0}
-  defaultEggLayingSecond: 30
-  defaultOldAgeSecond: 300
+  defaultEggLayingSecond: 5
+  defaultOldAgeSecond: 100
   id: 0
   OldChickenPrefab: {fileID: 1522802384616118522, guid: 7a287217fa8435e4bb74998d44b6fe85, type: 3}
   OnDie:

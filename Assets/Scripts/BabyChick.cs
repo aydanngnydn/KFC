@@ -14,6 +14,7 @@ public class BabyChick : Chicken
     private void Start()
     {
         timer = 0;
+        _movement = GetComponent<Movement>();
         StartCoroutine(IncreaseTimer());
     }
 
@@ -25,7 +26,12 @@ public class BabyChick : Chicken
             yield return new WaitForSeconds(1f);
         }
 
-        Instantiate(chicken, transform.position, transform.rotation,null);
+        var chickenNew = Instantiate(chicken, transform.position, transform.rotation,null).GetComponent<Chicken>();
+        if (pen)
+        {
+            pen.RemoveChicken(this);
+            pen.AddChicken(chickenNew);
+        }
         Destroy(gameObject);
 
     }

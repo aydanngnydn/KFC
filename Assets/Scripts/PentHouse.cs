@@ -44,9 +44,9 @@ public class PentHouse : Holder
         int newEggID = thingy[i].eggChances.ChooseFromOptions().value;
         while ( j < eggPrefabs.Count )
         {
-	        if (newEggID != eggPrefabs[j].id)
-		        j++;
-	        else break;
+	        if (newEggID == eggPrefabs[j].id) break;
+	        
+	        j++;
         }
 
         float xPos = Random.Range(minCorner.x, maxCorner.x);

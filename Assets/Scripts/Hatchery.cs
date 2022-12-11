@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Hatchery : Holder
 {
 	public Egg incubatingEgg;
+
+	[SerializeField] private UnityEvent OnEggHatch;
 	
 	private void Start()
 	{
@@ -29,6 +32,7 @@ public class Hatchery : Holder
 
 	public void HatchEgg()
 	{
+		OnEggHatch?.Invoke();
 		MakeChick();
 		DeleteEgg();
 	}

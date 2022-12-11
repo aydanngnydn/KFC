@@ -181,7 +181,9 @@ MonoBehaviour:
   - eggChances:
       chickenTypes:
       - value: 2
-        weight: 10
+        weight: 8
+      - value: 1
+        weight: 2
     chick1: 1
     chick2: 1
   - eggChances:
@@ -369,13 +371,12 @@ MonoBehaviour:
     chick1: 5
     chick2: 7
   eggPrefabs:
-  - {fileID: 6439898679432166477, guid: 27244c925eddcb34b81ea009c6212934, type: 3}
-  - {fileID: -6695346334990238337, guid: 752eb5b23e955574e8c74b2b0a1c9af1, type: 3}
-  - {fileID: -7428886254036957643, guid: ec326940f5ee8a24bb6e41db91df0a16, type: 3}
-  - {fileID: 4268010402132465105, guid: 0e5be1f98a840894e82a0788627a028c, type: 3}
-  - {fileID: 7602512002748648972, guid: 3fa3427e5b1e2404a90b99a1cd8ec7e1, type: 3}
-  - {fileID: 852677449923938360, guid: 7b0c8b659cf7bc9458387c6fc025e1b6, type: 3}
-  - {fileID: 5609865800503707992, guid: f6382d175538f9f4296b905407fa0ae6, type: 3}
+  - {fileID: 1117315634826203139, guid: b37d97c4269bd4e48a72e6313952e392, type: 3}
+  - {fileID: 1081229717586569301, guid: 7fc6ad4ba01ef9a42914983a3690efc3, type: 3}
+  - {fileID: 2852755401711063793, guid: 5aac0bb7ab6c13a47a774def02dc55d8, type: 3}
+  - {fileID: 8730618412874982391, guid: 595f75b2cc770b24db5387d9a491a7f1, type: 3}
+  - {fileID: 1790800722736703925, guid: 15ce94bedef00fd40b56f0a3796fc9e0, type: 3}
+  - {fileID: 2390486169125217317, guid: c626bb8099532eb4cae7b24cf6e983d9, type: 3}
   basket: {fileID: 3909989660312763045}
   onEyleme:
     m_PersistentCalls:

@@ -117,8 +117,8 @@ MonoBehaviour:
         m_CallState: 2
   chick: {fileID: 0}
   id: 0
-  timer: 10
-  hatchTime: 0
+  timer: 0
+  hatchTime: 5
   value: 0
 --- !u!58 &3717528607344456476
 CircleCollider2D:
