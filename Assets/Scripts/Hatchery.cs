@@ -16,13 +16,13 @@ public class Hatchery : Holder
 	{
 		while (true)
 		{
+			yield return null;
 			if (!incubatingEgg) continue;
 			incubatingEgg.timer += Time.deltaTime;
-			if (incubatingEgg.timer < incubatingEgg.hatchTime)
+			if (incubatingEgg.timer >= incubatingEgg.hatchTime)
 			{
 				HatchEgg();
 			}
-			yield return null;
 		}
 		
 		
@@ -42,7 +42,7 @@ public class Hatchery : Holder
 
 	public void DeleteEgg()
 	{
-		Destroy(incubatingEgg);
+		Destroy(incubatingEgg.gameObject);
 		incubatingEgg = null;
 	}
 	
