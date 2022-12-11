@@ -246,7 +246,7 @@ MonoBehaviour:
   hungerRate: 0
   eggPrefab: {fileID: 0}
   defaultEggLayingSecond: 30
-  id: 2
+  id: 7
   foodEff: 0
   agingSpeed: 0
   LaySpeed: 1
@@ -476,7 +476,7 @@ MonoBehaviour:
   hungerRate: 0
   eggPrefab: {fileID: 0}
   defaultEggLayingSecond: 30
-  id: 7
+  id: 5
   foodEff: 0
   agingSpeed: 0
   LaySpeed: 2
@@ -496,6 +496,14 @@ PrefabInstance:
       propertyPath: b
       value: 
       objectReference: {fileID: 1010167522}
+    - target: {fileID: 5561051798064783591, guid: e5d82e54e787e06408282ae22dae68bf, type: 3}
+      propertyPath: thingy.Array.data[15].eggChances.chickenTypes.Array.data[0].value
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5561051798064783591, guid: e5d82e54e787e06408282ae22dae68bf, type: 3}
+      propertyPath: thingy.Array.data[15].eggChances.chickenTypes.Array.data[1].value
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8946108512737725845, guid: e5d82e54e787e06408282ae22dae68bf, type: 3}
       propertyPath: m_Name
       value: Pena
